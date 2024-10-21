@@ -27,8 +27,8 @@ header{
     width: 100%;
     height: 70px;
     display: flex;
-    align-items: center; 
-    justify-content: space-around; 
+    align-items: center;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     transition: 0.3s;
@@ -43,7 +43,10 @@ header{
 .logo{
     text-decoration: none;
     color: #fff;
+    margin-top: 1%;
 }
+
+
 
 .nav-bar{
     list-style:none;
@@ -62,21 +65,21 @@ a.nav-link{
 }
 
 .nav-link {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
-    position: relative; 
-	
+    position: relative;
+
 }
 
 .nav-link::after {
-    content: ''; 
+    content: '';
     position: absolute;
-    left: 0; 
+    left: 0;
     bottom: 0;
     width: 0;
-    height: 1px; 
+    height: 1px;
     background-color: var(--main-decor-color);
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
@@ -84,7 +87,7 @@ a.nav-link{
 }
 
 /* Home */
-#home{     
+#home{
     margin: auto;
     height: 100vh;
     color: var(--main-fonts-color);
@@ -104,7 +107,7 @@ a.nav-link{
     left: 0;
     right: 0;
     opacity: 0.20;
-}  
+}
 
 .intro {
     text-align:center;
@@ -223,7 +226,7 @@ section + section {
 }
 
 .work{
-    display: flex; 
+    display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content:center;
@@ -392,7 +395,7 @@ hr {
 
 /* Scrollbar */
 ::-webkit-scrollbar{
-    width: 5px; 
+    width: 5px;
     background: rgba(5,5,5,1);
 }
 
@@ -420,7 +423,7 @@ hr {
     background: #dbdbdb;
     margin: 5px;
     transition: all 0.3s ease;
-	
+
 }
 
 .toggle .line1{
@@ -474,12 +477,11 @@ hr {
     }
     .logo{
         position:absolute;
-        top: 5px;
         left: 5%;
     }
     .nav-show{
         opacity: 100%;
-    }   
+    }
     .nav-bar{
         position:fixed;
         top: 0px;
@@ -526,7 +528,7 @@ hr {
         display: block;
         cursor:pointer;
         z-index: 5;
-    }   
+    }
     .nav-bar li{
         opacity:0;
     }
