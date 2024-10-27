@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Técnico Plus - Donde la Imaginación Crea Magia</title>
-    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sitio Web con Transición Suave</title>
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+    <link href="assets/css/about.css" rel="stylesheet">
+    <link href="assets/css/services.css" rel="stylesheet">
+    <link href="assets/css/projects.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+
 </head>
 <body>
-
-<div class="container">
-
-    <!--────────────────Header─────
-    <a class="logo" href="#home">
-            <h1 class="logo">Tech Plus</h1>
-        </a>
-    ──────────-->
     <header>
-
         <a class="logo" href="#home">
-            <img src="tecnicoplus-ico.png" alt="Logo Tech Plus" width="56" height="56">
+            <img src="assets/img/tecnicoplus-ico.png" alt="Logo Tech Plus" width="56" height="56"><h1 class="text-logo">Técnico Plus</h1>
           </a>
         <nav>
-            <ul class="nav-bar"><div class="bg"></div>
-                <li><a class="nav-link active" href="#home">Inicio</a></li>
+            <ul class="nav-bar">
+                <li><a class="nav-link" href="#home">Inicio</a></li>
                 <li><a class="nav-link" href="#about">Sobre Mí</a></li>
-                <li><a class="nav-link" href="#blog">Blog</a></li>
+                <li><a class="nav-link" href="#services">Servicios</a></li>
                 <li><a class="nav-link" href="#projects">Proyectos</a></li>
                 <li><a class="nav-link" href="#contact">Contacto</a></li>
             </ul>
-
             <div class="hamburger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -40,134 +38,108 @@
     </header>
 
     <main>
-        <!--─────────────────Home────────────────-->
-        <div id="home">
-            <div class="filter"></div>
-            <section class="intro">
-                <h3>Tech Plus<hr></h3>
+        <section id="home">
+            <div class="home-content">
+                <h1 class="span loader"><span class="m">T</span><span class="m">é</span><span class="m">c</span><span class="m">n</span><span class="m">i</span><span class="m">c</span><span class="m">o</span><span class="m">&nbsp;</span><span class="m">&nbsp;</span><span class="m">P</span><span class="m">l</span><span class="m">u</span><span class="m">s</span></h1>
                 <p></p>
+                <p><p>Soluciones técnicas para tus dispositivos electrónicos</p>Ofrecemos un servicio rápido, confiable y personalizado para garantizar la máxima satisfacción de nuestros clientes.</p>
+                <div class="button-group">
+                    <a href="#about" class="btn">Descubre Más</a>
+                    <a href="#contact" class="btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <h1>Sobre Mí</h1>
+                <p>Conoce más sobre nuestra historia y pasión por la tecnología</p>
                 <div class="image-container">
-                    <img src="assets/img/Soluciones técnicas para dispositivos electrónicos.webp" alt="Soluciones técnicas para dispositivos electrónicos">
+                    <img src="assets/img/1.jpg" alt="Sobre Mí">
                 </div>
-                <p></p>
-                <p></p>
-                <p class="textte">Especializados en brindar soluciones efectivas para restaurar el óptimo funcionamiento de tus dispositivos electrónicos, garantizando un servicio técnico confiable y de alta calidad.</p>
-
-					<div class="social-media">
-                    <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-                    <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-                    <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-                    <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <p>Somos un equipo de expertos apasionados por la tecnología. Nuestra misión es ofrecer soluciones técnicas de alta calidad para garantizar el buen funcionamiento de tus dispositivos electrónicos.</p>
+                <p>Contamos con años de experiencia y un profundo conocimiento en reparación y mantenimiento de equipos tecnológicos.</p>
+                <div class="button-group">
+                    <a href="#services" class="btn">Nuestros Servicios</a>
+                    <a href="#contact" class="btn-secondary">Contáctanos</a>
                 </div>
-                <a href="#projects" class="btn"><i class="fab fa-github"></i> Explora Mis Proyectos</a>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <!--───────────────Sobre Mí───────────────-->
-<div id="about">
-    <h3>Sobre Mí<hr></h3>
-    <img src="assets/img/1.jpg" alt="Foto de [Tu Nombre]" class="profile-pic" />
-    <p>Hola, soy [Tu Nombre], un apasionado de la tecnología y la innovación. Desde joven, siempre he estado fascinado por cómo funcionan las cosas, lo que me llevó a estudiar [Tu Carrera] en [Tu Universidad]. Mi experiencia abarca desde [breve descripción de tu experiencia profesional] hasta [otro aspecto relevante].</p>
-    <h4>Intereses</h4>
-    <ul>
-        <li>Tecnología y Electrónica</li>
-        <li>Desarrollo Web</li>
-        <li>Fotografía</li>
-        <li>Viajes y Exploración Cultural</li>
-    </ul>
-    <h4>Educación</h4>
-    <p>Graduado en [Tu Carrera] en [Tu Universidad], donde adquirí habilidades en [mencionar habilidades específicas].</p>
-    <h4>Experiencia Profesional</h4>
-    <p>A lo largo de mi carrera, he trabajado en [breve descripción de las empresas en las que has trabajado y tus roles]. Mis principales logros incluyen [mencionar logros importantes].</p>
-</div>
-
-
-<!--──────────────Blog (Opcional)──────────-->
-<div id="blog">
-    <h3>Blog</h3>
-    <hr>
-    <p>En mi blog comparto reflexiones y aprendizajes sobre temas relacionados con la industria, tecnología y desarrollo personal. Espero que disfrutes de mis artículos.</p>
-    <div class="blog-content">
-        <div class="main-entry">
-            <a href="[enlace_a_publicacion_principal]" target="_blank" class="main-title">Título de la Publicación Principal</a>
-            <p class="main-description">Descripción más detallada de la publicación principal, que brinda un resumen más amplio de los puntos clave y el contenido.</p>
-            <img src="assets/img/1.jpg" alt="Imagen de la Publicación Principal" class="main-image" />
-        </div>
-        <div class="recent-entries">
-            <h4>Entradas Recientes</h4>
-            <ul class="recent-list">
-                <li>
-                    <a href="[enlace_a_publicacion_1]" target="_blank" class="recent-title">Título de Publicación 1</a>
-                    <p class="recent-description">Breve descripción de la publicación 1.</p>
-                </li>
-                <li>
-                    <a href="[enlace_a_publicacion_2]" target="_blank" class="recent-title">Título de Publicación 2</a>
-                    <p class="recent-description">Breve descripción de la publicación 2.</p>
-                </li>
-                <li>
-                    <a href="[enlace_a_publicacion_3]" target="_blank" class="recent-title">Título de Publicación 3</a>
-                    <p class="recent-description">Breve descripción de la publicación 3.</p>
-                </li>
-                <li>
-                    <a href="[enlace_a_publicacion_4]" target="_blank" class="recent-title">Título de Publicación 4</a>
-                    <p class="recent-description">Breve descripción de la publicación 4.</p>
-                </li>
-                <li>
-                    <a href="[enlace_a_publicacion_5]" target="_blank" class="recent-title">Título de Publicación 5</a>
-                    <p class="recent-description">Breve descripción de la publicación 5.</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+        <section id="services">
+            <div class="services-content">
+                <h1>Nuestros Servicios</h1>
+                <p>Ofrecemos una variedad de servicios para mantener tus dispositivos en perfectas condiciones</p>
+                <div class="services-list">
+                    <div class="service-item">
+                        <i class="fas fa-laptop service-icon"></i>
+                        <h2>Reparación de Laptops</h2>
+                        <p>Servicio rápido y confiable para todas las marcas y modelos de laptops</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt service-icon"></i>
+                        <h2>Reparación de Smartphones</h2>
+                        <p>Reparaciones rápidas y efectivas para todos los modelos de smartphones</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-desktop service-icon"></i>
+                        <h2>Reparación de PCs</h2>
+                        <p>Mantenimiento y reparaciones para mantener tu PC en óptimas condiciones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <section id="projects">
+            <div class="projects-content">
+                <h1>Proyectos</h1>
+                <p>Explora algunos de nuestros trabajos más recientes</p>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <img src="assets/img/project1.jpg" alt="Proyecto 1">
+                        <h2>Proyecto 1</h2>
+                        <p>Descripción breve del proyecto 1</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/project2.jpg" alt="Proyecto 2">
+                        <h2>Proyecto 2</h2>
+                        <p>Descripción breve del proyecto 2</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/project3.jpg" alt="Proyecto 3">
+                        <h2>Proyecto 3</h2>
+                        <p>Descripción breve del proyecto 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!--──────────────Proyectos───────────────-->
-<div id="projects">
-    <h3>Mis Proyectos<hr></h3>
-    <p>Aquí encontrarás algunos de mis emocionantes proyectos. Cada uno refleja mi dedicación y amor por la creación y la resolución de problemas.</p>
-    <div class="work-box">
-        <div class="work">
-            <h4>Proyecto 1: [Nombre del Proyecto]</h4>
-            <img src="assets/img/1.jpg" alt="Imagen de Proyecto 1" class="project-image" />
-            <p>Descripción breve del proyecto, las tecnologías utilizadas y el objetivo del mismo. <a href="[enlace_al_proyecto]" target="_blank">Ver Proyecto</a></p>
-        </div>
-        <div class="work">
-            <h4>Proyecto 2: [Nombre del Proyecto]</h4>
-            <img src="assets/img/2.jpg" alt="Imagen de Proyecto 2" class="project-image" />
-            <p>Descripción breve del proyecto, las tecnologías utilizadas y el objetivo del mismo. <a href="[enlace_al_proyecto]" target="_blank">Ver Proyecto</a></p>
-        </div>
-        <div class="work">
-            <h4>Proyecto 3: [Nombre del Proyecto]</h4>
-            <img src="assets/img/3.jpg" alt="Imagen de Proyecto 3" class="project-image" />
-            <p>Descripción breve del proyecto, las tecnologías utilizadas y el objetivo del mismo. <a href="[enlace_al_proyecto]" target="_blank">Ver Proyecto</a></p>
-        </div>
-        <!-- Agregar más proyectos según sea necesario -->
-    </div>
-</div>
 
-<!--──────────────Contacto────────────────-->
-<div id="contact">
-    <h3>Contacto<hr></h3>
-    <p>No dudes en contactarme a través de mis redes sociales o por correo electrónico. Siempre estoy interesado en nuevas oportunidades de colaboración.</p>
-    <p><strong>Email:</strong> <a href="mailto:[tu_email@example.com]">[tu_email@example.com]</a></p>
-    <div class="social-media">
-        <a href="[enlace_a_codepen]" target="_blank"><i class='fab fa-codepen'></i></a>
-        <a href="[enlace_a_twitter]" target="_blank"><i class='fab fa-twitter'></i></a>
-        <a href="[enlace_a_github]" target="_blank"><i class='fab fa-github'></i></a>
-        <a href="[enlace_a_linkedin]" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-        <a href="[enlace_a_youtube]" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-</div>
+        <section id="contact">
+            <div class="contact-content">
+                <h1>Contacto</h1>
+                <p>¿Necesitas nuestros servicios? ¡Contáctanos!</p>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p class="pie">© 2024 Tech Plus</p>
+            </div>
+        </section>
 
     </main>
-    <footer class="copyright">© 2024
-        <a href="https://repl.it/@lilykhan" target="_blank"> Tech Plus</a>
-    </footer>
 
-</div>
-<script src="./assets/js/sript.js"></script>
+    <canvas class="background"></canvas>
+
+    <script src="./assets/js/sript.js"></script>
+    <script src="./assets/js/efects.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
 </body>
 </html>
