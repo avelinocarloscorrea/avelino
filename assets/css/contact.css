@@ -1,8 +1,8 @@
 #contact {
-  background: #333;
-  color: var(--main-fonts-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  color: var(--main-fonts-color);
   text-align: center;
   padding: 2em 1em;
+  margin-top: 70px;
 }
 
 .contact-content {
@@ -14,6 +14,12 @@
 .contact-content h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  margin-top: 70px;
+
+}
+
+.contact-content h1:hover{
+  text-shadow: 0 2px 4px var(--main-decor-color)
 }
 
 .contact-content p {
@@ -59,6 +65,22 @@ button {
 button:hover {
   background-color: #e0450d;
 }
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.social-media a {
+  font-size: 2em;
+  color: var(--main-fonts-color);
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: var(--main-decor-color);
+  text-shadow: 0 0 5px var
 
 @keyframes fadeIn {
   from {

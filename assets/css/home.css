@@ -1,5 +1,5 @@
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/home-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   color: var(--main-fonts-color);
   display: flex;
   align-items: center;
@@ -9,6 +9,8 @@
   min-height: 100vh;
   position: relative;
   z-index: 1;
+  margin-top: 70px;
+
 }
 
 .home-content {

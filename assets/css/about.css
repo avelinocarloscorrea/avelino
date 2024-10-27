@@ -17,6 +17,10 @@
   color: var(--secondary-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.projects-content h1:hover{
+  text-shadow: 0 2px 4px var(--main-decor-color);
+}
+
 
 .about-content p {
   font-size: 1.2em;
@@ -36,12 +40,12 @@
   height: auto;
   border-radius: 50%;
   max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--main-decor-color);
   transition: box-shadow 0.3s ease;
 }
 
 .image-container img:hover {
-  box-shadow: 0 4px 8px var(--main-decor-color);
+  box-shadow: 0 8px 16px var(--main-decor-color);
 }
 
 .button-group {

@@ -27,3 +27,15 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+    const whatsappMessage = `Hola, soy ${name}. ${message}`;
+
+    const whatsappUrl = `https://wa.me/+543755556899?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+});
