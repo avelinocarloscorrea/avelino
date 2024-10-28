@@ -81,6 +81,7 @@ button:hover {
 .social-media a:hover {
   color: var(--main-decor-color);
   text-shadow: 0 0 5px var
+}
 
 @keyframes fadeIn {
   from {

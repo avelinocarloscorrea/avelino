@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <link rel="shortcut icon" href="assets/img/tecnicoplus-ico.png" type="image/x-icon">
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+:root {
+    --main-background: #0D0D0D;
+    --main-fonts-color: #fff;
+    --main-decor-color: #F24F13;
+    --main-font-family: 'Poppins', sans-serif;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: var(--main-decor-color);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn:hover {
+    background-color: var(--highlight-color);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: transparent;
+    color: var(--main-decor-color);
+    border: 2px solid var(--main-decor-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--main-decor-color);
+    color: #fff;
+  }
+
+body {
+    font-family: var(--main-font-family);
+    background: var(--main-background);
+    color: var(--main-fonts-color);
+}
+
+
+#projects {
+  background: #1a1a1a;
+  color: var(--main-fonts-color);
+  text-align: center;
+  padding: 2em 1em;
+
+}
+
+.projects-content {
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.projects-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.projects-content h1:hover{
+  text-shadow: 0 2px 4px var(--main-decor-color);
+}
+
+.projects-content p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.project-item {
+  background: #444;
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px var(--main-decor-color);
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  background-color: #555;
+  box-shadow: 0 8px 16px var(--main-decor-color);
+
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.project-item p {
+  font-size: 1em;
+  color: #ccc;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+  </style>
+
+
+
+
+</head>
+<body>
+
+    <section id="projects">
+        <div class="projects-content">
+            <h1>Proyectos</h1>
+            <p>Explora algunos de nuestros trabajos más recientes</p>
+            <div class="projects-list">
+                <div class="project-item">
+                    <img src="../../assets/img/desarrollo-web.png" alt="Proyecto 1">
+                    <h2>Proyecto 1</h2>
+                    <p>Descripción breve del proyecto 1</p>
+                </div>
+                <div class="project-item">
+                    <img src="../../assets/img/robótica.png" alt="Proyecto 2">
+                    <h2>Proyecto 2</h2>
+                    <p>Descripción breve del proyecto 2</p>
+                </div>
+                <div class="project-item">
+                    <img src="../../assets/img/electrónica.png" alt="Proyecto 3">
+                    <h2>Proyecto 3</h2>
+                    <p>Descripción breve del proyecto 3</p>
+                </div>
+                <a href="../../index.html#projects" class="btn" id="boton-oculto">Mis proyectos</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
