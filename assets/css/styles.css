@@ -117,6 +117,10 @@ header {
     margin: 0 10px;
   }
 
+  .logo img:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
 
 .nav-bar {
     list-style: none;
@@ -127,33 +131,35 @@ header {
 .nav-link {
     text-decoration: none;
     color: var(--main-fonts-color);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem rem;
     text-transform: uppercase;
     position: relative;
     font-weight: bold;
     transition: color 0.3s ease;
-}
+  }
 
-.nav-link::after {
+  .nav-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -24px;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: var(--main-decor-color);
-    transition: width 0.3s ease, background-color 0.3s ease;
-}
+    transition: width 0.3s ease, background-color 1s ease;
+  }
 
-.nav-link.active::after,
-.nav-link:hover::after {
+  .nav-link.active::after {
     width: 100%;
-}
+  }
 
-.nav-link.active,
-.nav-link:hover {
+  .nav-link:hover::after {
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
     color: var(--main-decor-color);
-}
+  }
 
 .hamburger {
     display: none;
@@ -287,6 +293,7 @@ html {
         display: block;
       }
 }
+
 
 
 .pie {
