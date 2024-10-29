@@ -39,3 +39,5 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const whatsappUrl = `https://wa.me/+543755556899?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
 });
+
+
