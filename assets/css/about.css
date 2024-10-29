@@ -48,11 +48,7 @@
   box-shadow: 0 8px 16px var(--main-decor-color);
 }
 
-.button-group {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
+
 
 
 @keyframes fadeIn {
