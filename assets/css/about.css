@@ -17,7 +17,8 @@
   color: var(--secondary-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.projects-content h1:hover{
+
+.about-content h1:hover{
   text-shadow: 0 2px 4px var(--main-decor-color);
 }
 

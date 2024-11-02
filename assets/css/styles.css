@@ -75,8 +75,8 @@ header {
   }
 
   .logo img:hover {
-    transform: scale(1.03);
-  filter: drop-shadow(0 4px 8px var(--main-decor-color));
+    transform: scale(1.025);
+  filter: drop-shadow(0 2px 4px var(--main-decor-color));
 
 }
 
@@ -315,13 +315,13 @@ html {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 1.8px;
-  background-color: transparent;
+  width: 1.5px;
+  background-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar:hover {
   width: 10px;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -334,3 +334,4 @@ html {
   margin-top: 69px;
   border-radius: 0px;
 }
+
