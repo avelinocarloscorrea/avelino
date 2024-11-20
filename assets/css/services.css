@@ -10,6 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     animation: fadeIn 1.5s ease-in-out;
+    margin-top: 70px;
 }
 
 .services-content h1 {
